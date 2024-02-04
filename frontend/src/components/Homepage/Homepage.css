@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@800&display=swap');
+
+.homepage {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://media.istockphoto.com/id/1446229465/photo/red-heart-and-stethoscope-are-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=1-aE7XV24f8qVr8fGnpvypir8fSxYaM9sHZurKoutj8=");
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+
+}
+
+.home_content_head {
+    padding: 3%;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.home_content {
+    
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.home_content_buttons {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons_link {
+    text-decoration: none;
+    color: black;
+    height: 50px;
+    width: 300px;
+    padding: 3%;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid;
+    border-image: linear-gradient(to right, #4d8bf5, #0046ad);
+    border-image-slice: 1;
+
+
+}

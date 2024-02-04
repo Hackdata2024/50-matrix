@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Orbitron:wght@900&display=swap');
+
+
+
+
+.header{
+  font-family: 'Italiana', serif;
+  padding: 2%;
+  position: fixed;
+  z-index: 2;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(245, 245, 245, 0.1);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay.open {
+  width: 100%;
+}
+
+.overlay-content {
+  position: relative;
+  top: 7%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+
+
+.overlay a {
+  letter-spacing: 3px;
+  width: fit-content;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 36px;
+  color: rgba(150, 93, 233, 1);
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  transform: scale(1.05);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
